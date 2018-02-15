@@ -20,8 +20,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="13dp"
-            android:layout_marginTop="21dp"
             android:text="Bahraini Dinar:"
             android:textSize="20sp" />
 
@@ -41,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/editText"
+            android:layout_alignParentTop="true"
             android:onClick="click"
             android:text="?"
             android:textSize="10sp" />
@@ -50,7 +48,7 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/editText"
             android:text="Indian Rupee:"
             android:textSize="20sp" />
@@ -59,128 +57,63 @@
             android:id="@+id/editText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView7"
-            android:layout_alignBottom="@+id/textView7"
-            android:layout_alignStart="@+id/editText7"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/textView1"
             android:hint="Result"
             android:textSize="20sp" />
+
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView1"
-            android:layout_below="@+id/editText2"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="14dp"
             android:text="US Dollar:"
             android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView1"
-            android:layout_alignBottom="@+id/textView1"
-            android:layout_marginStart="17dp"
-            android:layout_toEndOf="@+id/textView3"
-            android:hint="Result"
-            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView2"
-            android:layout_below="@+id/editText3"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
             android:text="Malaysian Ringgit:"
             android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView2"
-            android:layout_alignBottom="@+id/textView2"
-            android:layout_alignStart="@+id/editText2"
-            android:hint="Result"
-            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView5"
-            android:layout_below="@+id/editText4"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="26dp"
             android:text="Russian Ruble:"
             android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/editText3"
-            android:layout_below="@+id/textView2"
-            android:hint="Result"
-            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView3"
-            android:layout_below="@+id/textView4"
-            android:layout_marginTop="11dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/textView"
             android:text="Hungarian Forint:"
             android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/editText5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView4"
-            android:layout_alignBottom="@+id/textView4"
-            android:layout_alignStart="@+id/editText4"
-            android:hint="Result"
-            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView5"
-            android:layout_below="@+id/textView5"
-            android:layout_marginTop="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
             android:text="Japanese Yen:"
             android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/editText6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView5"
-            android:layout_alignBottom="@+id/textView5"
-            android:layout_alignStart="@+id/editText5"
-            android:hint="Result"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView4"
-            android:layout_below="@+id/textView6"
-            android:layout_marginTop="17dp"
-            android:text="Swiss Franc:"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/editText7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView6"
-            android:layout_alignBottom="@+id/textView6"
-            android:layout_alignStart="@+id/editText6"
-            android:hint="Result"
-            android:textSize="20sp" />
 
     </RelativeLayout>
 </ScrollView>
